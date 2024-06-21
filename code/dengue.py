@@ -21,4 +21,15 @@ class preprocess:
         
         return text
     
-
+    def save_text(self,text,text_file_name):
+        with open(text_file_name,'w') as f:
+            f.write(text)
+            print(f'{text_file_name}にテキストを保存しました')
+        
+        return
+    
+    def read_text(self,text_file_name):
+        with open(text_file_name,'r') as f:
+            text=f.read()
+        
+        return text
