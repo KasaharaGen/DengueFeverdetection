@@ -1,5 +1,6 @@
 import os
-from preprocess import preprocess_text,preprocess_df
+from preprocess_text import preprocess_text
+from preprocess_df import preprocess_df
 
 dir_path='../sample_data'
 
