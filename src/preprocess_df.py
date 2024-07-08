@@ -35,6 +35,6 @@ class preprocess_df:
         Dengue_df=pd.merge(Dengue_df,four_words_Dengue_df,on='patientID',how='left')
         return Dengue_df
 
-    def make_csv(self,Dengue_df):
-        Dengue_df.to_csv('Dengue.csv',index=True)
+    def make_csv(self,Dengue_df,save_path_name):
+        Dengue_df.to_csv(save_path_name,index=True)
         return
