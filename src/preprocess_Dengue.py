@@ -5,7 +5,7 @@ from preprocess_df import preprocess_df
 dir_path='../data/sample_data'
 
 pre_text=preprocess_text()
-columns=['mammogram','craniocaudal','mediolateral']  #システム上小文字で入力するのを忘れずに
+columns=['burning micturition','cold','craniocaudal','mediolateral']  #システム上小文字で入力するのを忘れずに
 pre_df=preprocess_df(columns)
 pre_dengue_df=pre_df.make_df()
 store_list=[pre_dengue_df]
