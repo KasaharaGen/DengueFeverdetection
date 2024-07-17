@@ -1,6 +1,6 @@
-patient ID,mammogram,craniocaudal,mediolateral
-0,1,1,1
-1,1,1,1
-2,1,1,1
-3,1,1,1
-4,1,1,1
+patientID,fever,headache,muscle pain,joint pain,rash,nausea,vomiting,eye pain,abdominal pain,lymphadenopathy,chills,diarrhea,fatigue,dengue
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+4,0,0,0,0,0,0,0,0,0,0,0,0,0,0
