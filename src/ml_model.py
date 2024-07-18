@@ -8,37 +8,35 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 
-class dengue_model:
+class ml_model:
     def __init__(self):
         return
     
     #input,targetデータの習得
-    def get_data(self,csv_path):
-        df=pd.read_csv(csv_path)
-        input=df.drop(columns=["patientID","dengue"])
-        target=df['"dengue']
-        return input,target
-
-    
-    #訓練データとテストデータの分割
-    def train_test_split(self,input,target):
+    def get_data(self,df,target_name):
+        #データの読み込み
+        input=df.drop([target_name],axis=1)
+        target=df[target_name]
+        
+        #データの分割
         input_train, input_test, target_train, target_test = train_test_split(input, target, test_size=0.2, random_state=42)
         
-        #特徴量の標準化
-        scaler = StandardScaler()
+        #特徴量の標準化(必要な場合のみ)
+        """scaler = StandardScaler()
         input_train = scaler.fit_transform(input_train)
-        input_test = scaler.transform(input_test)
+        input_test = scaler.transform(input_test)"""
 
         return input_train,input_test,target_train,target_test
+
     
     #サポートベクターマシン
-    def svm_model(self):
-        svm_model=SVC(kernel='rbf', gamma='scale')
-        return svm_model
+    def svm(self):
+        svm=SVC(kernel='rbf', gamma='scale')
+        return svm
     
     #ランダムフォレスト
     def RandomForest(self):
-        RandomForest=RandomForestClassifier(n_estimators=100, random_state=42)
+        RandomForest=RandomForestClassifier(100, random_state=42)
         return RandomForest
 
     #学習曲線
@@ -65,8 +63,17 @@ class dengue_model:
         plt.legend(loc="best")
         return plt
     
+    def result(self,model,input_test,target_test):
+        target_pred = model.predict(input_test)
 
+        # モデルの精度を評価
+        accuracy = accuracy_score(target_test, target_pred)
+        print(f'Accuracy: {accuracy}')
 
+        # 詳細な評価レポートを表示
+        print(classification_report(target_test, target_pred))
 
-    
-    
+        # 混同行列を表示
+        print(confusion_matrix(target_test, target_pred))
+        
+        return target_pred
