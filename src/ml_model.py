@@ -63,6 +63,7 @@ class ml_model:
         plt.legend(loc="best")
         return plt
     
+    #モデル評価
     def result(self,model,input_test,target_test):
         target_pred = model.predict(input_test)
 
