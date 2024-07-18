@@ -36,6 +36,7 @@ class dengue_model:
         svm_model=SVC(kernel='rbf', gamma='scale')
         return svm_model
     
+    #ランダムフォレスト
     def RandomForest(self):
         RandomForest=RandomForestClassifier(n_estimators=100, random_state=42)
         return RandomForest
