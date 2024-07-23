@@ -2,7 +2,7 @@ import os
 from preprocess_text import preprocess_text
 from preprocess_df import preprocess_df
 
-dir_path='../data/sample_data'
+dir_path='../data/dengue_data'
 
 pre_text=preprocess_text()
 columns=['burning micturition','cold','craniocaudal','mediolateral']  #システム上小文字で入力するのを忘れずに
@@ -20,4 +20,4 @@ for filename in os.listdir(dir_path):
     store_list.append(df)
 
 Dengue_df=pre_df.comp_df(store_list)
-pre_df.make_csv(Dengue_df,'../data/Dengue2.csv')
+pre_df.make_csv(Dengue_df,'../data/Dengue.csv')
