@@ -38,20 +38,17 @@ class preprocess_text:
         except Exception as e:
             print(f"An error occurred: {e}")
             return None
-    
-    
-    def save_text(self,text,text_file_name):
-        with open(text_file_name,'w') as f:
-            f.write(text)
-            print(f'{text_file_name}にテキストを保存しました')
         
-        return
     
-    def read_text(self,text_file_name):
-        with open(text_file_name,'r') as f:
-            text=f.read()
+    #text内の特徴量の判別
+    def extraction_words_to_dict(self,text, extraction_words):
+        jugde_dict = {}
         
-        return text
+        for item in extraction_words:
+            jugde_dict[item] = 1 if item in text else 0
+        
+        return jugde_dict
+    
     
 class preprocess_df:
     def __init__(self,columns):
