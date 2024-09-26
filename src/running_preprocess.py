@@ -17,4 +17,4 @@ for filename in os.listdir(dir_path):
     dict_df.append(jugde_dict)
 
 df=pd.DataFrame(dict_df)
-
+df.to_csv('../data/extract_dengue_data')

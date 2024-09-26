@@ -3,9 +3,6 @@ from pdf2image import convert_from_path
 from PIL import Image
 import pytesseract
 import os
-import pandas as pd
-from collections import Counter
-import re
 
 
 
