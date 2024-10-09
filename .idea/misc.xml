@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.10" />
+=======
+    <option name="sdkName" value="dengue" />
+>>>>>>> b70eeab455cd5e9ef7f5f24a7ca9f122eca32ab3
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="dengue" project-jdk-type="Python SDK" />
 </project>
