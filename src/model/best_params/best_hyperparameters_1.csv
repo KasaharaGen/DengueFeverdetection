@@ -1,0 +1,9 @@
+,solver,C,n_neighbors,weights,algorithm,gamma,criterion,max_depth,min_samples_split,min_samples_leaf,n_estimators,num_leaves,learning_rate,var_smoothing
+Logistic Regression,liblinear,0.0763520640608751,,,,,,,,,,,,
+SVM RBF,,14.378986737163403,,,,scale,,,,,,,,
+KNN,,,95.0,distance,ball_tree,,,,,,,,,
+Decision Tree,,,,,,,gini,91.0,54.0,58.0,,,,
+Random Forest,,,,,,,,50.0,3.0,47.0,272.0,,,
+LGBM,,,,,,,,,,,785.0,726.0,0.011312243290825287,
+AdaBoost,,,,,,,,,,,489.0,,0.786966493993367,
+Naive Bayes,,,,,,,,,,,,,,2.2507761010606118e-09
