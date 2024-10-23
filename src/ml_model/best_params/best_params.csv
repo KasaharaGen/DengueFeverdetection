@@ -1,9 +1,9 @@
 ,solver,C,n_neighbors,weights,algorithm,gamma,criterion,max_depth,min_samples_split,min_samples_leaf,n_estimators,num_leaves,learning_rate,lambda_l1,lambda_l2,var_smoothing
-Logistic Regression,liblinear,0.09107870165315052,,,,,,,,,,,,,,
-RBF SVM,,0.35102796134847325,,,,scale,,,,,,,,,,
-Nearest Neighbors,,,69.0,distance,auto,,,,,,,,,,,
-Decision Tree,,,,,,,entropy,30.0,27.0,100.0,,,,,,
-Random Forest,,,,,,,,45.0,43.0,55.0,914.0,,,,,
-LGBM,,,,,,,,,,,653.0,496.0,0.06638601669955413,49.09322774571758,57.06580656941769,
-AdaBoost,,,,,,,,,,,445.0,,0.0016610693207210758,,,
-Naive Bayes,,,,,,,,,,,,,,,,4.069282281389353e-08
+Logistic Regression,liblinear,0.0892547006849105,,,,,,,,,,,,,,
+RBF SVM,,0.34933868002343005,,,,scale,,,,,,,,,,
+Nearest Neighbors,,,38.0,uniform,kd_tree,,,,,,,,,,,
+Decision Tree,,,,,,,entropy,25.0,2.0,100.0,,,,,,
+Random Forest,,,,,,,,84.0,23.0,49.0,146.0,,,,,
+LGBM,,,,,,,,,,,42.0,518.0,0.035261487000502495,1.510199513493676,15.851851733075744,
+AdaBoost,,,,,,,,,,,867.0,,0.5751760311205637,,,
+Naive Bayes,,,,,,,,,,,,,,,,2.1151630090606526e-08
