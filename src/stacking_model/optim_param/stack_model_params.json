@@ -1,0 +1,1 @@
+{"embed_dim": 256, "num_heads": 16, "num_layers": 4, "dropout": 0.5, "learning_rate": 0.0007400257470594041, "weight_decay": 0.021710065492330736}
