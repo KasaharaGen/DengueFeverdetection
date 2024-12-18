@@ -1,1 +1,1 @@
-{"hidden_dim": 64, "num_blocks": 4, "dropout1": 0.35000000000000003, "dropout2": 0.4, "learning_rate": 0.0003090280165750253, "weight_decay": 0.000403495474255714}
+{"hidden_dim": 64, "num_blocks": 3, "dropout1": 0.4, "dropout2": 0.5, "learning_rate": 0.00019818345059160225, "weight_decay": 0.010024765726594232}

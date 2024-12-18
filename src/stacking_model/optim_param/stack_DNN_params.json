@@ -1,1 +1,1 @@
-{"dropout1": 0.5, "dropout2": 0.2, "learning_rate": 0.00010142164588457326, "weight_decay": 0.006116488052196242}
+{"dropout1": 0.05, "dropout2": 0.4, "learning_rate": 0.00010845328174970751, "weight_decay": 0.057575132608342905}
